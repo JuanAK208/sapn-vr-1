@@ -1,39 +1,49 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Postulación - Policía Nacional de San Andreas</title>
-    <link rel="icon" href="icono.ico" type="image/x-icon"> 
+    <link rel="icon" href="icono.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #333;
         }
 
         header {
-            background-color: #002868;
-            /* Azul oscuro */
+            background: url('postu.png') no-repeat center bottom;
+            /* Fondo del header */
+            background-size: 100% auto; /* Ajuste del tamaño de fondo */
+	    background-position: top left;
             color: white;
             padding: 20px;
             text-align: center;
+            height: 300px; /* Ajuste de la altura del header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         nav {
-            background-color: #ff0000;
-            /* Rojo */
             color: white;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            right: 0;
             padding: 10px;
-            text-align: center;
+            z-index: 10;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
+            margin-left: 20px;
         }
 
         nav a:hover {
@@ -42,7 +52,7 @@
 
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 100px auto 20px;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 10px;
@@ -50,8 +60,7 @@
         }
 
         footer {
-            background-color: #002868;
-            /* Azul oscuro */
+            background-color: #111;
             color: white;
             text-align: center;
             padding: 10px;
@@ -65,38 +74,34 @@
 
         #title_arrow {
             color: #FFFFFF;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        
-        
+
         p {
             margin-bottom: 20px;
         }
-        .division {
-            margin-bottom: 40px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-        }
 
         #btn_postular {
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #dc0404; /* color del fondo del botón */
-          color: white; /* color del texto del botón */
-          border: none;
-          border-radius: 5px; /* para bordes redondeados */
-          text-decoration: none; /* quitar subrayado */
-          cursor: pointer; /* cambiar el cursor al pasar sobre el botón */
-}
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #dc0404;
+            /* color del fondo del botón */
+            color: white;
+            /* color del texto del botón */
+            border: none;
+            border-radius: 5px;
+            /* para bordes redondeados */
+            text-decoration: none;
+            /* quitar subrayado */
+            cursor: pointer;
+            /* cambiar el cursor al pasar sobre el botón */
+        }
 
-    #btn_postular:hover {
-          background-color: #df3535; /* color del fondo del botón al pasar el cursor */
-    }
+        #btn_postular:hover {
+            background-color: #df3535;
+            /* color del fondo del botón al pasar el cursor */
+        }
 
-        
     </style>
 </head>
 
