@@ -7,7 +7,7 @@
     <title>Artículo Penal - Policia Nacional de San Andreas</title>
     <link rel="icon" href="icono.ico" type="image/x-icon">
     <style>
-        /* Estilos para el encabezado */
+        /* Estilos existentes */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,90 +16,114 @@
         }
 
         header {
-            background-color: #002868;
-            /* Azul oscuro */
+            background-image: url('penal.png');
+            background-size: cover;
+            background-position: center;
             color: white;
+            padding: 40px;
+            text-align: center;
+            height: 300px;
+        }
+
+        nav {
+            color: white;
+            text-align: right;
             padding: 20px;
-            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
 
-        header h1 {
-            color: white;
-        }
-
-        /* Estilos para el footer */
-        footer {
-            background-color: #0d47a1;
-            /* Azul oscuro */
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-            bottom: 0;
-            width: 100%;
+        nav ul {
+            list-style-type: none;
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
         }
 
-        /* Estilos para la franja roja */
-        nav {
-            background-color: #ff0000;
-            /* Rojo */
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-decoration: none;
-        }
-        
-        nav {
-            background-color: #ff0000;
-            /* Rojo */
-            color: white;
-            padding: 10px;
-            text-align: center;
+        nav li {
+            display: inline;
+            margin-left: 20px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
-        
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Estilos para el formulario de búsqueda */
+        .post {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #111; /* Nuevo color del footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 48px; /* Tamaño del texto del h1 aumentado */
+            margin-top: 100px; /* Ajuste para bajar el h1 */
+        }
+
+        h1 {
+            background-image: url('tu-imagen-de-header.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            /* Agregar una sombra de texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* Nuevos estilos para los inputs */
         input[type="text"] {
             width: calc(100% - 22px);
             padding: 10px;
             font-size: 16px;
-            border: 2px solid #0d47a1;
-            /* Azul oscuro */
+            border: 2px solid #0d47a1; /* Azul oscuro */
             border-radius: 5px;
             margin-bottom: 20px;
         }
 
         input[type="text"]:focus {
             outline: none;
-            border-color: #ff0000;
-            /* Rojo */
+            border-color: #ff0000; /* Rojo */
         }
 
-        ul {
+	   .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+	        ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
@@ -122,33 +146,8 @@
             color: #ffffff;
         }
 
-        /* Estilos para el contenido principal */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
 
-        h1 {
-            color: white;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        /* Estilos para el footer */
-        footer {
-            background-color: #002868;
-            /* Azul oscuro */
-            color: white;
-            text-align: center;
-            padding: 10px;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+	</style>
 </head>
 
 <body>
@@ -398,8 +397,6 @@ Vehículos embargados se estacionan en el parking interno por temas relacionados
             <li>El código penal es público para todos los ciudadanos y puede estar sujeto a cambios constantes.
 </li>
             <li><b>Última modificación 24 de octubre de 2023.</b></li>
-            
-            
         </ul>
     </div>
 
@@ -407,7 +404,7 @@ Vehículos embargados se estacionan en el parking interno por temas relacionados
         <p>&copy; 2024 Policía Nacional de San Andreas</p>
     </footer>
 
-    <script>
+ <script>
         const searchInput = document.getElementById('searchInput');
         const phraseList = document.getElementById('phraseList').getElementsByTagName('li');
 
